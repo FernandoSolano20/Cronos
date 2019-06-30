@@ -1,0 +1,120 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.boton-formulario{
+    background: #2f3542;
+    color: #fff;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.input-error{
+    border: 2px #e74c3c solid !important;
+}
+
+/*Inicio estilos header*/
+.header-principal{
+    background: #1B1A1A;
+}
+
+.header-principal nav a{
+    color: #F3EFEF;
+    text-decoration: none;
+}
+
+.header-principal nav a:hover{
+    color: #D81C44;
+}
+
+/*Fin estilos header*/
+
+.titulo-principal{
+    font-family: verdana;
+    color: #D81C44;
+    font-size: 24px;
+}   
+
+.subtitulo{
+    font-family: verdana;
+    color: #ED4C67;
+    font-size: 20px;
+}   
+
+.tabla-informacion{
+    border: 2px solid #000;
+}
+
+.tabla-informacion thead{
+    border: 2px solid #000;
+    background-color: #1b1464;
+    color: #FFC312;
+}
+
+.tabla-informacion thead th{
+    height: 30px;
+    min-width: 100px;
+}
+
+.tabla-informacion tbody{
+    border: 2px solid #000;
+}
+
+.tabla-informacion tbody tr{
+    border-bottom: 2px solid rgb(27, 20, 100);
+}
+
+.tabla-informacion tbody tr:hover{
+    background: rgb(27, 20, 100, 0.3);
+}
+
+.tabla-informacion tbody td{
+    height: 50px;
+    text-align: center;
+}
+
+/*Estilos del fomrulario de contacto*/
+#sct-contacto{
+    border: 1px solid #000;
+}
+#sct-contacto h2{
+    background: #2f3542;
+}
+#sct-contacto form{
+    background: #f1f2f6;
+    width: 400px;
+}
+#sct-contacto form div{
+    margin-bottom: 15px; 
+}
+#sct-contacto label{
+    display: inline-block;
+    width: 200px;
+}
+#sct-contacto input{
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #ED4C67;
+    background: #f1f2f6;
+    outline: none;
+}
+#sct-contacto input[type=date]{
+    width: 179px;
+}
+#sct-contacto input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;   
+}
+#sct-contacto textarea{
+    width: 178px;
+    height: 100px;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #ED4C67;
+    background: #f1f2f6;
+    outline: none;
+}

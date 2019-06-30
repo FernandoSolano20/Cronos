@@ -1,0 +1,28 @@
+Todos los elementos tienen un formato especifico:
+
+Display: 
+    -blobck como los bloques uno sobre encima del otro{p,nav,div,h1,table,section,header,body}
+    -inline uno a la par de otro {img, a, label, input}
+    -inline-block le da propiedades de bloque a un elemento en linea (NUNCA usarlo para poner un elemento a la par 
+    del otro)
+
+display hace una gran diferencia que a tiene en linea no deja tener 100px
+
+Diferencias
+Block:
+-Se acomodan hacia abajo
+-Tienen acho y alto (width y height)
+
+Inline:
+-Se acomodan uno a la par del otro
+-En lugar de terner ancho y alto, ellos tiene un ancho y un alto que estan definidos por su contenido
+    Es decir si puse Hola va tener el width de Hola
+
+que un elemento en linea tenga propiedades para definirlas
+
+inline-block
+-No poner a elementos en bloque la propiedad inline-blobck porque ahi quito propiedades de ancho y alto
+inlie blobck solo se le pone a elemntos inline que ellos no tienen esas propiedades 
+
+cuando uno le pone inline-block a un block es como cortar un elemento
+se le puede poner a un elemento en linea para adquier ese ancho y alto

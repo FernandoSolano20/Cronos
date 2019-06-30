@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario Autor</title>
+    <link rel="stylesheet" href="css/styleForm.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div>
+                <label for="isbn">ISBN</label>
+                <input type="text" placeholder="ISBN" id="isbn">
+            </div>
+
+            <div>
+                <label for="title">Título</label>
+                <input type="text" placeholder="Título" id="title">
+            </div>
+
+            <div>
+                <label for="price">Precio</label>
+                <input type="number" placeholder="Precio" id="price">
+            </div>
+
+            <div>
+                <label for="releaseDate">Fecha de lazamineto</label>
+                <input type="date" id="releaseDate">
+            </div>
+
+            <div>
+                <label for="author">Autor</label>
+                <select name="" id="author">
+                    <option value="Miguel de Cervantes">Miguel de Cervantes</option>
+                    <option value="Edgar Allan Poe">Edgar Allan Poe</option>
+                    <option value="Mary Shelley">Mary Shelley</option>
+                </select>
+            </div>
+
+            <button type="button" id="save">Registrar</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="js/formAutor.js"></script>
+</body>
+
+</html>

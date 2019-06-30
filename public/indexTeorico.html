@@ -1,0 +1,141 @@
+<!--Es un lenguaje de estructura
+html no se procesa se renderiza por parte el navegador
+cuando se dice lenguaje de programacion es toma de decisiones
+html solo es la estrucutra solo se ve feo y sin estilos
+
+Html se compone de elementos y cada elemento tiene una etiqueta de apertura y puede tener una etiqueta de cierre
+(esa etiqueta de cierre se usa si se enmarca texto osea si esta encerrado)
+
+HTML es lenguaje que [ermite enmarcar texto para convertitlo ern hipertexto, osea es que vamos a enmarcar ese texto del texto plano
+
+
+HTML -- hiper text markup languaje podemos enmarcar el texto y poder velos
+
+Las etiquetas se representan por los simboilos 
+
+etiqueta de apertura : <nombre_etiqueta>
+etiqueta de cierre :   </nombre_etiqueta>
+
+aparir de sitio web vamos a tener nodos
+el primero se llama window, ese espacio es todo la ventana todo el navegador
+dentro de window esta document el documet es el recuadro blanco y dentro de el es el espacio donde vamos a trabajar
+
+y apartir de eso vamos a hacer un node que se llama html, todas las paginas son interpretadas por el navegador
+
+/*Navegador Google chrome*/
+-->
+
+<!DOCTYPE HTML>
+<!--iNSTRUCCION Para que navegador sepa que estamos usando html5 utilma veresion-->
+<html lang="es">
+<!--Todo lo que esta aqui se interpreta en navegador
+    version de html ponerle arriba con que version esta trabajando
+    -->
+<!--Html se divide en 2 partes html tiene 2 hijos importates head y body ellos son hermanos-->
+<!--Tambien se usa la identacion-->
+
+<head>
+    <!--Para que es? intrucciones para la pagina 
+        Que son son como el cerebro de la pagina web que estamos usando 
+        --refrencias a estilos 
+        --elementos meta que son elemntos que nos permniten dar intrucciones a la pagina osea que mapa de caracteres
+        vamos a usar que titulo vamos a usar los keywords la descripcion son escenciales
+        -- refrencias a tipografia de google, etc
+        --no se ve es como cerebro sin cerebro no funciona
+        -->
+    <!--El que se ve arriba-->
+    <title>Cronos -- Inico</title>
+    <!--Cuando marcamos en etiquetas hacemos hiertexto por eso es que enmarcamos el title
+        meta no enmarca texto por lo que no tiene etiqueta de cierre-->
+    <!--Indicar que mapa de caracteres vamos a usar-->
+    <meta charset="utf-8">
+    <!--Uso de caracteres especiales para usar tildes y todo esa vara, info adcional-->
+    <!--Attr siempre va en etiqueta de apertura no cierre-->
+</head>
+
+<body>
+    <!--Contenido de pagian
+        --Img ,parrafos 
+        -->
+    <!--Colocamos etiquetas tal y como quiero que aparezcan ya que se interpreta de arriba a abajo-->
+    <!--Html muy semantico-->
+
+    <!--Menu-->
+    <header>
+        <!--Logo, nuestra navegacion o menu-->
+
+        <img src="" alt="Logo de cronos">
+        <!--No cierra porque no podemos poner un texto o algo asi
+            Attr source y luego alt que es un texto alterno ya que si no se carga la img el texto alterno
+            y google penaliza si uno no la pon
+            -->
+        <nav>
+            <a href="index.html">Inico</a>
+            <a href="propiedades.html">Propiedades</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="iniciar-sesion.html">Iniciar Sesión</a>
+            <a href="#">Cerrar Sesión</a>
+            <!--Cerrar sesion no manda a ningun lado a nivel de progra hace
+                una borra de credenciales y por debajo redirecciona a index-->
+        </nav>
+    </header>
+    <!--Contenido principalde pagina-->
+    <!--Informacion que es esencial-->
+    <main>
+        <!--Banner texto de izq y form de derecha-->
+        <div>
+            <!--Division que es un contenedor que ahi vamos a poner cosas adentro-->
+            <h1>Cronos Inmubles</h1>
+            <!--Titulo principal de una pagina-->
+            <!--Porque no pongo una imagen aqui porque quiero que la imagen este atras 
+                siempre que queremos una magen de fondo se hace con css-->
+        </div>
+        <!--Todo eso esta dentro del main-->
+        <!--Y eso se va llmar seciones-->
+        <section>
+            <!--Cogemos ese texto que esta ahi para ponerlo en el html-->
+            <h2>¡Cuente con nosotros!</h2>
+            <p>Para vender o comprar sus propiadades.</p>
+            <p> Somos una empresa con más de 20 años de experiencia en la industria de bienes raices.</p>
+            <!--Alt + z -->
+            <button type="button">Empiece ya!</button>
+        </section>
+
+        <section>
+            <h2>Contáctenos</h2>
+            <form>
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text">
+                    <!--Indica al navegador que puede ir cualquier texto-->
+                </div>
+
+                <div>
+                    <label for="">Correo</label>
+                    <input type="email">
+                    <!--Texto es e mas basico pero este es le prodriamos email-->
+                    <!--Si eso lo vemos en internet y el nos abre con cel el telefono y con eso solo vemos teclado
+                            con arroba-->
+                    <!--crtl + espacio posibles attr-->
+                </div>
+
+
+                <div>
+                    <label for="">Fecha de Nacimiento</label>
+                    <input type="date"><!--type es un attr-->
+                </div>
+                
+                <div>
+                    <label for="">Comentario</label>
+                    <textarea></textarea><!--si uno pone input aqui el texto no se puede visualizar
+                    si hace eso va ser malo hay un elemento especifico es es en lugar 
+                    Sin espacios pegado sin espacios porque con js va dar error esas varas-->
+                </div>
+
+                <button type="button">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

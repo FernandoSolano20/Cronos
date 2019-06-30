@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <title>Cronos -- Inico</title>
+    <meta charset="utf-8">    
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css" type="text/css">
+</head>
+
+<body>
+    <header class="header-principal">
+
+        <img src="" alt="Logo de cronos">
+        <nav>
+            <a href="index.html">Inico</a>
+            <a href="propiedades.html">Propiedades</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="iniciar-sesion.html">Iniciar Sesión</a>
+            <a href="#">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1 class="titulo-principal">Cronos Inmubles</h1>
+        </div>
+        <section>
+            <h2>¡Cuente con nosotros!</h2>
+            <p>Para vender o comprar sus propiadades.</p>
+            <p> Somos una empresa con más de 20 años de experiencia en la industria de bienes raices.</p>
+            <button type="button">Empiece ya!</button>
+        </section>
+
+        <section id="sct-contacto">
+            <h2 class="subtitulo">Contáctenos</h2>
+            <form>
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" id="txt-nombre">
+                </div>
+
+                <div>
+                    <label for="">Correo</label>
+                    <input type="email" id="txt_correo">
+                </div>
+
+                <div>
+                    <label for="">Fecha de Nacimiento</label>
+                    <input type="date" id="txt-nacimiento">
+                </div>
+                
+                <div>
+                    <label for="">Comentario</label>
+                    <textarea id="txt_comentario"></textarea>
+                </div>
+
+                <button type="button" class="boton-formulario" id="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="js/controlador-index.js"></script>
+</body>
+
+</html>
