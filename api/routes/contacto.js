@@ -7,6 +7,8 @@ const express = require('express'),
 //Definir la ruta para registar contactos
 //empizan con / por estandar
 //- en el medio por standar
+//router nos permite como hacer el enrutameiento dependiendo
+//un solo documento por lo que se pone sinular
 router.post('/registar-contacto', function(req, res){
     /*req lo que recibo y response lo que respondo */
     let body = req.body;
@@ -35,6 +37,23 @@ router.post('/registar-contacto', function(req, res){
             }
         }
     );
+});
+
+router.get('/listar-contactos', function(req, res){
+    Contacto.find(function(err, contactosBD /*plural*/){
+        if(err){
+            return res.status(400).json({
+                success: false,
+                msj: 'No se pueden listar los contactos',
+                err
+            });
+        }else{
+            return res.json({
+                success: true,
+                lista_contactos: contactosBD
+            })
+        }
+    });
 });
 
 

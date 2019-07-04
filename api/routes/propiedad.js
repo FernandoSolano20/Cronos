@@ -2,7 +2,7 @@
 
 const express = require('express'),
     router = express.Router(),
-    Contacto = require('../models/propiedad.model');
+    Propiedad = require('../models/propiedad.model');
 
 //Definir la ruta para registar contactos
 //empizan con / por estandar
@@ -10,7 +10,7 @@ const express = require('express'),
 router.post('/registar-propiedad', function(req, res){
     let body = req.body;
     
-    let nuevo_propiedad =  new Contacto({
+    let nuevo_propiedad =  new Propiedad({
         propiedad: body.propiedad,
         provincia: body.provincia,
         canton: body.canton,
@@ -33,6 +33,23 @@ router.post('/registar-propiedad', function(req, res){
             }
         }
     );
+});
+
+router.get('/listar-propiedades', function(req, res){
+    Propiedad.find(function(err, propiedadBD){
+        if(err){
+            return res.status(400).json({
+                success: false,
+                msj: 'No se pueden listar las propiedades',
+                err
+            });
+        }else{
+            return res.json({
+                success: true,
+                lista_propiedadess: propiedadBD
+            })
+        }
+    });
 });
 
 
