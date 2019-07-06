@@ -2,7 +2,7 @@
 
 const express = require('express'),
     router = express.Router(),//permite crear la ruta
-    Contacto = require('./models/contacto.model');
+    Contacto = require('../models/contacto.model');
 
 //Definir la ruta para registar contactos
 //empizan con / por estandar
