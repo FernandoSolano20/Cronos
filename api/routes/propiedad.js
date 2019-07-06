@@ -7,7 +7,7 @@ const express = require('express'),
 //Definir la ruta para registar contactos
 //empizan con / por estandar
 //- en el medio por standar
-router.post('/registar-propiedad', function(req, res){
+router.post('/registrar-propiedad', function(req, res){
     let body = req.body;
     
     let nuevo_propiedad =  new Contacto({

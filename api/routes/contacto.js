@@ -2,12 +2,12 @@
 
 const express = require('express'),
     router = express.Router(),//permite crear la ruta
-    Contacto = require('../models/contacto.model');
+    Contacto = require('./models/contacto.model');
 
 //Definir la ruta para registar contactos
 //empizan con / por estandar
 //- en el medio por standar
-router.post('/registar-contacto', function(req, res){
+router.post('/registrar-contacto', function(req, res){
     /*req lo que recibo y response lo que respondo */
     let body = req.body;
     
