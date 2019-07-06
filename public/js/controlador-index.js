@@ -50,16 +50,13 @@ let saludar = (/*parametros*/) => {
     let nombre = inputNombre.value;
     let correo = inputCorreo.value;
     let fecha = new Date(inputNacimiento.value);
-    let fecha_formateada = fecha.getUTCDate() + "/" + (fecha.getUTCMonth()+1) + "/" + fecha.getFullYear();
+    let fecha_formateada = fecha.getFullYear() + "/" + (fecha.getUTCMonth()+1) + "/" +  fecha.getUTCDate();
     let comentario = inputComentario.value;
 
     let error = validar(nombre,correo,fecha,comentario);
 
     if(!error){
-        console.log(`Hola ${nombre} mucho gusto`);
-        console.log(`Su correo es ${correo}`);// console.log("Su correo es " + correo);
-        console.log(`Su fecha de nacimiento es ${fecha_formateada}`);
-        console.log(`Su comentario es ${comentario}`);
+        registrarContacto(nombre,correo,fecha_formateada,comentario);
         Swal.fire( {
                 //json format
                 type:'success',

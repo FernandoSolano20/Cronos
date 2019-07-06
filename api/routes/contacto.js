@@ -9,7 +9,7 @@ const express = require('express'),
 //- en el medio por standar
 //router nos permite como hacer el enrutameiento dependiendo
 //un solo documento por lo que se pone sinular
-router.post('/registar-contacto', function(req, res){
+router.post('/registrar-contacto', function(req, res){
     /*req lo que recibo y response lo que respondo */
     let body = req.body;
     
@@ -57,4 +57,4 @@ router.get('/listar-contactos', function(req, res){
 });
 
 
-module.exports = router;
+module.exports = router;//middleware function error es porque no se exporta router
